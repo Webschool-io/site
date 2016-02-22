@@ -476,8 +476,6 @@ body {
 Adicionei um separador entre os cursos aqui:
 
 ```css
-}
-
 .molecule-curso {
   border-bottom: 1px solid #ccc;
   margin-bottom: 4rem;
