@@ -272,7 +272,8 @@ Vamos entender com o nosso exemplo:
 ``` 
 
 (0,2,0)
-```
+
+
 Ou seja eu aumento o valor do seletor `.organism-cursos .atom-titulo-curso` por utilizar 2 classes, claraamente você percebe que qualquer seletor com ID(#) terá precêdencia sobre todos.
 
 Agora siga meu pensamento:
@@ -290,3 +291,7 @@ Então reguarde seus IDs para estilos que precisem se sobrepor ao padrões defin
 Sabendo disso entendemos como modificar o átomo apenas quando o mesmo se encontra em uma molécula, possibilitando assim que os átomos nunca sejam modificados diretamente. 
 
 Isso me lembrou do [Princípio da incerteza de Heisenberg](https://pt.wikipedia.org/wiki/Princ%C3%ADpio_da_incerteza_de_Heisenberg), porém ele é para elétrons.
+
+Agora vamos ver o porquê essa forma faz sentido e é facilmente reusável.
+
+Hora de adicionr mais um curso na Webschool.io, vamos pegar a primeira aula do [Cue]()
