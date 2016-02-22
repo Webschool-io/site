@@ -254,18 +254,16 @@ x > y > z
 Vamos entender com o nosso exemplo:
 
 
-``` css
+```css
 .atom-titulo-curso {
   font-family: 'Permanent Marker', cursive;
   font-size: 5rem;
 }
 ``` 
 
-``` 
 (0,1,0)
-```
 
-``` css
+```css
 .organism-cursos .atom-titulo-curso {
   color: #FFCA00;
 }
@@ -273,6 +271,7 @@ Vamos entender com o nosso exemplo:
 
 (0,2,0)
 
+```
 
 Ou seja eu aumento o valor do seletor `.organism-cursos .atom-titulo-curso` por utilizar 2 classes, claraamente você percebe que qualquer seletor com ID(#) terá precêdencia sobre todos.
 
@@ -294,4 +293,54 @@ Isso me lembrou do [Princípio da incerteza de Heisenberg](https://pt.wikipedia.
 
 Agora vamos ver o porquê essa forma faz sentido e é facilmente reusável.
 
-Hora de adicionr mais um curso na Webschool.io, vamos pegar a primeira aula do [Cue]()
+Hora de adicionr mais um curso na Webschool.io, vamos pegar a primeira aula do [Curso de PHP](https://github.com/Webschool-io/Curso-PHP-Completo), basta duplicar o código do curso e mudar os textos e o vídeo, ficando assim:
+
+
+```html
+<main class="organism-cursos">
+  <h1 class="atom-titulo-curso">Be MEAN</h1>
+
+  <section class="molecule-modulos">
+    <h2 class="atom-titulo-modulo">MongoDB</h2>
+    
+    <article class="molecule-aula">
+      <h3 class="atom-titulo-aula">Aula 1</h3>
+      
+      <div class="atom-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/leYxsEAL_yY?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div>
+        <a class="atom-slides" href="https://docs.google.com/presentation/d/1_CHh_fTkzgxAnxB3MlZ5WRhTqMLViMk__jkCZiZ3IMA/edit?usp=sharing">Slides</a>
+        <a class="atom-apostila" href="https://github.com/Webschool-io/be-mean-instagram">Apostila</a>
+      </div>
+    </article>
+
+  </section>
+
+  <h1 class="atom-titulo-curso">Curso PHP</h1>
+
+  <section class="molecule-modulos">
+    <h2 class="atom-titulo-modulo">Íntrodução</h2>
+    
+    <article class="molecule-aula">
+      <h3 class="atom-titulo-aula">Aula 1</h3>
+      
+      <div class="atom-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DsV_c6Mv8P0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div>
+        <a class="atom-slides" href="https://docs.google.com/presentation/d/1_CHh_fTkzgxAnxB3MlZ5WRhTqMLViMk__jkCZiZ3IMA/edit?usp=sharing">Slides</a>
+        <a class="atom-apostila" href="https://github.com/Webschool-io/be-mean-instagram">Apostila</a>
+      </div>
+    </article>
+
+  </section>
+</main>
+```
+
+Percebeu que se não separarmos os cursos, futuramente, o código pode ficar muito confuso e difícil de manter, para sanar esse provável problema precisamos encapsular cada curso, pois o mesmo pode ter dezenas de módulos onde cada módulo pode ter dezenas de aulas.
+
+Vish.
+
