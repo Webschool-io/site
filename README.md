@@ -212,7 +212,7 @@ Deixando nosso HTML assim:
 </html>
 ```
 
-![](http://i.imgur.com/annpoOy.png)
+![](./assets/images/webschool-site-01.png)
 
 Após essas 3 etapas (Átomo, Molécula e Organismo) iremos definir o Template, essa é a etapa onde posicionamos nossos elementos.
 
@@ -226,4 +226,11 @@ Vamos iniciar centralizando o conteúdo principal, o logo já foi previamente ce
 }
 ```
 
-![](http://i.imgur.com/7NMPb0e.png)
+![](./assets/images/webschool-site-02.png)
+
+Agora vamos dar os retoques finais como *font*, *margins* e afins.
+
+Adicionei a *font* [Permanent Marker](https://fonts.googleapis.com/css?family=Permanent+Marker) e mudei a cor do título do curso para amarelo, porém
+
+
+![](./assets/images/webschool-site-03.png)

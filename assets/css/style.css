@@ -1,3 +1,6 @@
+body {
+  font-size: 14px;
+}
 .atom-logo {
   display: block;
   width: 20%;
@@ -5,8 +8,8 @@
   margin: 0 auto;
 }
 .atom-titulo-curso {
-  color: #1437DE;
-  font-size: 2.2rem;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
 }
 .atom-titulo-modulo {
   color: #1437DE;
@@ -38,4 +41,12 @@
   text-align: center;
   margin: 0 auto;
   width: 90%;
+}
+
+.organism-cursos .atom-titulo-curso {
+  color: #FFCA00;
+}
+.organism-cursos .atom-titulo-modulo,
+.organism-cursos .atom-titulo-aula {
+  color: #000;
 }
