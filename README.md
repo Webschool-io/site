@@ -271,9 +271,8 @@ Vamos entender com o nosso exemplo:
 
 (0,2,0)
 
-```
 
-Ou seja eu aumento o valor do seletor `.organism-cursos .atom-titulo-curso` por utilizar 2 classes, claraamente você percebe que qualquer seletor com ID(#) terá precêdencia sobre todos.
+Ou seja eu aumento o valor do seletor `.organism-cursos .atom-titulo-curso` por utilizar 2 classes, claramente você percebe que qualquer seletor com ID(#) terá precêdencia sobre todos.
 
 Agora siga meu pensamento:
 
@@ -348,7 +347,7 @@ Vish.
 ```html
 <main class="organism-cursos">
 
-  <div class="molecule-curso">
+  <div class="molecule-curso" id="molecule-curso-mean">>
     <h1 class="atom-titulo-curso">Be MEAN</h1>
     <section class="molecule-modulos">
       <h2 class="atom-titulo-modulo">MongoDB</h2>      
@@ -366,7 +365,7 @@ Vish.
     </section>
   </div>
 
-  <div class="molecule-curso">
+  <div class="molecule-curso" id="molecule-curso-php">>
     <h1 class="atom-titulo-curso">Curso PHP</h1>
     <section class="molecule-modulos">
       <h2 class="atom-titulo-modulo">Íntrodução</h2>
@@ -390,6 +389,98 @@ Esse encapsulamento me lembrou as [Buckyballs (Fulereno)](https://pt.wikipedia.o
 
 > Como exemplo, os metalofulerenos consistem em fulerenos contendo um átomo de metal encapsulado no interior de sua estrutura.
 
-Percebeu que não estou inventando os paranaues químicos né?
+Viu que não estou inventando os paranaues químicos né?
 
 As moléculas são muito versáteis, podendo ser pequenas como da água ou gigante como dos polímeros.
+
+Voltando ao código, você deve ter notado que coloquei IDs nas moléculas dos cursos, isso devido o CSS não possibiltar o `extend` dos códigos, pois se usarmos qualquer pré-processador o ID seria a a classe e essa classe estaria extendendo classe `molecule-curso`.
+
+Como são quase 10 da manhã e eu comecei esse texto depois das 5 da manhã, estou com preguiça e deixarei com ID mesmo, no módulo de Frontend do Be MEAN passaremos esse código para Stylus.
+
+O CSS está assim:
+
+```css
+body {
+  font-size: 14px;
+}
+.atom-logo {
+  display: block;
+  width: 20%;
+  max-width: 30%;
+  margin: 0 auto;
+}
+.atom-titulo-curso {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
+  margin: 0;
+}
+.atom-titulo-modulo {
+  color: #1437DE;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+.atom-titulo-aula {
+  color: #1437DE;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
+}
+.atom-video {
+  display: block;
+  margin: 1em auto;
+  width: 90%;
+}
+.atom-slides {
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.atom-apostila {
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.molecule-curso {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+.organism-cursos {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.organism-cursos .atom-titulo-curso {
+  color: #FFCA00;
+}
+.organism-cursos .atom-titulo-modulo,
+.organism-cursos .atom-titulo-aula {
+  color: #000;
+}
+.organism-cursos .atom-slides,
+.organism-cursos .atom-apostila {
+  color: #FFCA00;
+}
+
+#molecule-curso-php .atom-titulo-curso {
+  font-family: 'Alfa Slab One', cursive;
+  color: #FF4800;
+}
+``` 
+
+Adicionei um separador entre os cursos aqui:
+
+```css
+}
+
+.molecule-curso {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+```

@@ -41,6 +41,12 @@ body {
   text-decoration: underline;
 }
 
+.molecule-curso {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
 .organism-cursos {
   text-align: center;
   margin: 0 auto;
@@ -57,4 +63,9 @@ body {
 .organism-cursos .atom-slides,
 .organism-cursos .atom-apostila {
   color: #FFCA00;
+}
+
+#molecule-curso-php .atom-titulo-curso {
+  font-family: 'Alfa Slab One', cursive;
+  color: #FF4800;
 }
