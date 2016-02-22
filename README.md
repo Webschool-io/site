@@ -222,7 +222,6 @@ Vamos iniciar centralizando o conteúdo principal, o logo já foi previamente ce
 .organism-cursos {
   text-align: center;
   margin: 0 auto;
-  width: 90%;
 }
 ```
 
@@ -230,7 +229,64 @@ Vamos iniciar centralizando o conteúdo principal, o logo já foi previamente ce
 
 Agora vamos dar os retoques finais como *font*, *margins* e afins.
 
-Adicionei a *font* [Permanent Marker](https://fonts.googleapis.com/css?family=Permanent+Marker) e mudei a cor do título do curso para amarelo, porém
-
+Adicionei a *font* [Permanent Marker](https://fonts.googleapis.com/css?family=Permanent+Marker) e mudei a cor do título do curso para amarelo, e os outros títulos para preto, porém não podemos mais modificar os átomos.
 
 ![](./assets/images/webschool-site-03.png)
+
+**Então como devemos fazer?**
+
+Você conhece algo chamado [Precedência de seletores](http://intentor.com.br/precedencia-de-seletores-css/)?
+
+Basicamente é um conjunto de regras que definem o **peso** de seletores css, para aplicar essas regras iremos utilizar o Cálculo de precedência que separa os seletores em 3 categorias:
+
+- x: quantidade de seletores do tipo id existentes na regra CSS;
+- y: quantidade de seletores do tipo classe ou pseudoclasse;
+- z: quantidade de seletores do tipo HTML;
+
+Onde a fórmula para calcular o peso é:
+
+``` 
+(x,y,z)
+
+x > y > z
+```
+
+Vamos entender com o nosso exemplo:
+
+
+``` css
+.atom-titulo-curso {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
+}
+``` 
+
+``` 
+(0,1,0)
+```
+
+``` css
+.organism-cursos .atom-titulo-curso {
+  color: #FFCA00;
+}
+``` 
+
+(0,2,0)
+```
+Ou seja eu aumento o valor do seletor `.organism-cursos .atom-titulo-curso` por utilizar 2 classes, claraamente você percebe que qualquer seletor com ID(#) terá precêdencia sobre todos.
+
+Agora siga meu pensamento:
+
+> O seletor com ID tem maior peso, logo seu estilo sempre será o último a ser lido.
+
+Isso não te lembra uma outra funcionalidade do CSS? Algo bem importante??
+
+Agora ficou fácil né!!!
+
+Sim. O `!important`.
+
+Então reguarde seus IDs para estilos que precisem se sobrepor ao padrões definidos anteriormente.
+
+Sabendo disso entendemos como modificar o átomo apenas quando o mesmo se encontra em uma molécula, possibilitando assim que os átomos nunca sejam modificados diretamente. 
+
+Isso me lembrou do [Princípio da incerteza de Heisenberg](https://pt.wikipedia.org/wiki/Princ%C3%ADpio_da_incerteza_de_Heisenberg), porém ele é para elétrons.

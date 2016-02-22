@@ -10,14 +10,18 @@ body {
 .atom-titulo-curso {
   font-family: 'Permanent Marker', cursive;
   font-size: 5rem;
+  margin: 0;
 }
 .atom-titulo-modulo {
   color: #1437DE;
-  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  margin: 0;
 }
 .atom-titulo-aula {
   color: #1437DE;
-  font-size: 1.4rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
 }
 .atom-video {
   display: block;
@@ -49,4 +53,8 @@ body {
 .organism-cursos .atom-titulo-modulo,
 .organism-cursos .atom-titulo-aula {
   color: #000;
+}
+.organism-cursos .atom-slides,
+.organism-cursos .atom-apostila {
+  color: #FFCA00;
 }
