@@ -389,3 +389,7 @@ Vish.
 Esse encapsulamento me lembrou as [Buckyballs (Fulereno)](https://pt.wikipedia.org/wiki/Fulereno)
 
 > Como exemplo, os metalofulerenos consistem em fulerenos contendo um átomo de metal encapsulado no interior de sua estrutura.
+
+Percebeu que não estou inventando os paranaues químicos né?
+
+As moléculas são muito versáteis, podendo ser pequenas como da água ou gigante como dos polímeros.
