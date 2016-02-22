@@ -1,5 +1,17 @@
 # Webschool.io Site
 
+Iremos desenvolver uma página simples apenas para mostrar os vídeos do [Be MEAN](), para isso usaremos o Atomic Design para criar os componentes visuais.
+
+Caso você não tenha lido nada, ainda, sobre Atomic Design saiba que ele é uma metolodologia para criação de componentes visuais para sistemas web, é dividido em 5 etapas:
+
+- Átomos
+- Moléculas
+- Organismos
+- Templates
+- Pages
+
+As 3 primeiras são as etapas de estilização, então vamos iniciar nossa jornada no mundo da química
+
 ## Átomos
 
 - logo
@@ -101,7 +113,7 @@ O código acima é o nível mais alto da nossa hierarquia, logo você deve se pe
 
 Percebeu que os títulos, nesse layout, são todos átomos pois não os agrupamos com `hgroup`. 
 
-Descendo mais um pouco na nossa química de estilos iremos criar uma reação entre 2 moléculas:
+Entrando um pouco mais na nossa química dos estilos iremos criar uma reação entre 2 moléculas:
 
 
 ```html
