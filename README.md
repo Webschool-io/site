@@ -344,3 +344,48 @@ Percebeu que se não separarmos os cursos, futuramente, o código pode ficar mui
 
 Vish.
 
+
+```html
+<main class="organism-cursos">
+
+  <div class="molecule-curso">
+    <h1 class="atom-titulo-curso">Be MEAN</h1>
+    <section class="molecule-modulos">
+      <h2 class="atom-titulo-modulo">MongoDB</h2>      
+      <article class="molecule-aula">
+        <h3 class="atom-titulo-aula">Aula 1</h3>
+        <div class="atom-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/leYxsEAL_yY?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <a class="atom-slides" href="https://docs.google.com/presentation/d/1_CHh_fTkzgxAnxB3MlZ5WRhTqMLViMk__jkCZiZ3IMA/edit?usp=sharing">Slides</a>
+          <a class="atom-apostila" href="https://github.com/Webschool-io/be-mean-instagram">Apostila</a>
+        </div>
+
+      </article>
+    </section>
+  </div>
+
+  <div class="molecule-curso">
+    <h1 class="atom-titulo-curso">Curso PHP</h1>
+    <section class="molecule-modulos">
+      <h2 class="atom-titulo-modulo">Íntrodução</h2>
+      <article class="molecule-aula">
+        <h3 class="atom-titulo-aula">Aula 1</h3>      
+        <div class="atom-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DsV_c6Mv8P0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <a class="atom-slides" href="https://docs.google.com/presentation/d/1_CHh_fTkzgxAnxB3MlZ5WRhTqMLViMk__jkCZiZ3IMA/edit?usp=sharing">Slides</a>
+          <a class="atom-apostila" href="https://github.com/Webschool-io/be-mean-instagram">Apostila</a>
+        </div>
+      </article>
+    </section>
+  <div>
+
+</main>
+```
+
+Esse encapsulamento me lembrou as [Buckyballs (Fulereno)](https://pt.wikipedia.org/wiki/Fulereno)
+
+> Como exemplo, os metalofulerenos consistem em fulerenos contendo um átomo de metal encapsulado no interior de sua estrutura.
