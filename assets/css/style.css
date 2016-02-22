@@ -1,23 +1,41 @@
 .atom-logo {
+  display: block;
   width: 20%;
   max-width: 30%;
   margin: 0 auto;
 }
 .atom-titulo-curso {
-  
+  color: #1437DE;
+  font-size: 2.2rem;
 }
 .atom-titulo-modulo {
-  
+  color: #1437DE;
+  font-size: 1.8rem;
 }
 .atom-titulo-aula {
-  
+  color: #1437DE;
+  font-size: 1.4rem;
 }
 .atom-video {
-  
+  display: block;
+  margin: 1em auto;
+  width: 90%;
 }
 .atom-slides {
-  
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .atom-apostila {
-  
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.organism-cursos {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
 }
