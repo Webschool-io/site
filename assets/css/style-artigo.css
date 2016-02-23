@@ -31,26 +31,17 @@ body {
 }
 .atom-slides {
   color: #666;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-decoration: underline;
 }
 .atom-apostila {
   color: #666;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-decoration: underline;
 }
-.atom-apoio-texto,
-.atom-apoio-valor {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 2rem;
-}
-.atom-apoio-valor-texto {
-  font-size: 1.6rem;
-}
 
-.molecule-aula,
 .molecule-curso {
   border-bottom: 1px solid #ccc;
   margin-bottom: 4rem;
@@ -73,10 +64,6 @@ body {
 .organism-cursos .atom-slides,
 .organism-cursos .atom-apostila {
   color: #FFCA00;
-  display: inline-block;
-  width: 25%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 #molecule-curso-php .atom-titulo-curso {
