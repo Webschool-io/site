@@ -4,12 +4,17 @@ body {
 }
 iframe {
   height: 56.25vw;
-  width: 100%; 
+  width: 100%;
 }
 @media screen and (min-width: 800px) {
-  iframe { 
+  iframe {
     height: 29vw;
-    width: 60%; 
+    width: 100%;
+  }
+  .atom-pre-video {
+    height: 29vw!important;
+    width: 60%;
+    margin: auto;
   }
 }
 .atom-logo {
@@ -38,6 +43,27 @@ iframe {
   padding-bottom: 2rem;
   padding-top: 25px;
   height: auto;
+}
+.atom-pre-video {
+  background: #F0BC00;
+  height: 56.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.atom-pre-video span {
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  border-radius: 0;
+  opacity: .5;
+  content: '';
+  cursor:pointer;
+  border-left: 40px solid #FFF;
+  margin-left: 10px;
+  transition: all .2s;
+}
+.atom-pre-video span:hover {
+  opacity: 1;
 }
 .videoWrapper iframe {
   position: absolute;
