@@ -1,0 +1,37 @@
+  var videos = {
+    mongoDB: {
+      aula01: '<iframe src="https://www.youtube.com/embed/leYxsEAL_yY?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula02: '<iframe height="543" src="https://www.youtube.com/embed/PaNVk0V2UNI?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula03: '<iframe height="543" src="https://www.youtube.com/embed/cIHjA1hyPPY?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula04pt1: '<iframe height="315" src="https://www.youtube.com/embed/ONzJsNbv15U?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula04pt2: '<iframe height="315" src="https://www.youtube.com/embed/ozbmQb6SVQk?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula05: '<iframe height="315" src="https://www.youtube.com/embed/1eHc8reT_Vk?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula06pt1: '<iframe height="315" src="https://www.youtube.com/embed/5bbWeEEzRQM?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula06pt2: '<iframe height="315" src="https://www.youtube.com/embed/IXz4IL0da1k?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+      aula07: '<iframe height="543" src="https://www.youtube.com/embed/1ElYrkSIvII?list=PL77JVjKTJT2gXHb9FEokJsPEcoOmyF1pY" frameborder="0" allowfullscreen></iframe>',
+    },
+    nodeJS: {
+      aula01: '<iframe src="https://www.youtube.com/embed/OgfO37F6mdg?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula02: '<iframe src="https://www.youtube.com/embed/mDtNcosGgiU?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula03: '<iframe src="https://www.youtube.com/embed/TpNofR3Axsk?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula04: '<iframe src="https://www.youtube.com/embed/f9SE7Y0qYEg?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aulaEspecialES6: '<iframe height="315" src="https://www.youtube.com/embed/sw7kPzkIN4g?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula05pt1: '<iframe src="https://www.youtube.com/embed/Kg4RovUQWeg?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula05pt2: '<iframe src="https://www.youtube.com/embed/DD1XKyaq9NE?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula06pt1: '<iframe src="https://www.youtube.com/embed/O8odFa3dl-k?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula06pt2: '<iframe src="https://www.youtube.com/embed/02a_lo_KLwU?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula06pt3: '<iframe src="https://www.youtube.com/embed/XeLRYhrcKJo?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula07: '<iframe src="https://www.youtube.com/embed/i6h1A-l11-k?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula08pt1: '<iframe src="https://www.youtube.com/embed/tscqqhVQje8?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula08pt2: '<iframe src="https://www.youtube.com/embed/_wj0y_77CYs?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula08pt3: '<iframe src="https://www.youtube.com/embed/8M4pN64BsnU?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula08pt4: '<iframe src="https://www.youtube.com/embed/xR3ex_YjQyc?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula08pt5: '<iframe src="https://www.youtube.com/embed/VRGI-R_PxpQ?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula08pt6: '<iframe src="https://www.youtube.com/embed/3Hq7O7TeXjw?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula09pt1: '<iframe src="https://www.youtube.com/embed/dHeb_Gs4zzo?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula09pt2: '<iframe src="https://www.youtube.com/embed/OCB7jMZBIas?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula10pt1: '<iframe src="https://www.youtube.com/embed/ZRUuBfoYlxs?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula10pt2: '<iframe  src="https://www.youtube.com/embed/CcFxvOBohvM" frameborder="0" allowfullscreen></iframe>',
+      aula11: '<iframe width="995" height="543" src="https://www.youtube.com/embed/chCB2hFmnoQ?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>'
+    }
+  }
