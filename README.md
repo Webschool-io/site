@@ -482,3 +482,4 @@ Adicionei um separador entre os cursos aqui:
   padding-bottom: 4rem;
 }
 ```
+
