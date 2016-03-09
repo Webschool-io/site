@@ -6,6 +6,9 @@ iframe {
   height: 56.25vw;
   width: 100%;
 }
+a {
+  color: #000;
+}
 @media screen and (min-width: 800px) {
   iframe {
     height: 29vw;
@@ -88,7 +91,13 @@ iframe {
 .atom-apoio-texto,
 .atom-apoio-valor {
   font-family: 'Permanent Marker', cursive;
+}
+.atom-apoio-texto {
   font-size: 2rem;
+}
+.atom-apoio-valor {
+  color: #FEE836;
+  font-size: 4rem;
 }
 .atom-apoio-valor-texto {
   font-size: 1.6rem;
