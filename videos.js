@@ -32,6 +32,7 @@
       aula09pt2: '<iframe src="https://www.youtube.com/embed/OCB7jMZBIas?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
       aula10pt1: '<iframe src="https://www.youtube.com/embed/ZRUuBfoYlxs?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
       aula10pt2: '<iframe  src="https://www.youtube.com/embed/CcFxvOBohvM" frameborder="0" allowfullscreen></iframe>',
-      aula11: '<iframe width="995" height="543" src="https://www.youtube.com/embed/chCB2hFmnoQ?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>'
+      aula11: '<iframe width="995" height="543" src="https://www.youtube.com/embed/chCB2hFmnoQ?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ" frameborder="0" allowfullscreen></iframe>',
+      aula12pt1: '<iframe width="995" height="543" src="https://www.youtube.com/embed/2lml_4kOhgU" frameborder="0" allowfullscreen></iframe>'
     }
   }
